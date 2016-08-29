@@ -7,14 +7,14 @@
 using namespace std;
 
 // all the algorithms will be done 
-// when we converted to the mathematical axis, that is,
+// when we converted to the mathematical coordinate, that is,
 // up and right is positive
 // after the calculation done, the y_axis will be converted back
-// to the computer axis, that is down and right positive
+// to the computer coordinate, that is down and right positive
 #define CONVERT_Y_AXIS(y) 	y=-y
 
 inline float calcDistance(b2Vec2 start, b2Vec2 end){
-	// Unnecessary to convert axis
+	// Unnecessary to convert coordinate
 	return sqrt(pow(end.x - start.x, 2) + pow(end.y - start.y, 2));
 }
 
